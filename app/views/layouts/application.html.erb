@@ -1,0 +1,17 @@
+<html>
+	<head>	
+		<%= stylesheet_link_tag 'main', 'projects', 'user_guide' %>
+		<%= javascript_include_tag :defaults %>
+	</head>
+	
+	<body>
+		<div id='main'>
+			<div id="header">
+				<p class="logo">iRefactoring</p>
+			</div>
+			<div class="site">
+				<%= yield %>
+			</div>
+		</div>
+	</body>
+</html>

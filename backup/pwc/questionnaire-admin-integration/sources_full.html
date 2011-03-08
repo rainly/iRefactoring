@@ -1,0 +1,1383 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<!-- saved from url=(0022)http://www.ncover.com/ -->
+    <title>NCover Code Coverage Report - MyTaxes.PwC.questionnaire-admin-integration.com</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+	<link rel="stylesheet" type="text/css" href="default.css" />
+	
+	<script type="text/javascript" src="sorttable.js"></script>
+    <script type="text/javascript" src="prototype.js"></script>
+    <!--[if IE]>
+		<script type="text/javascript" src="excanvas.js"></script>
+	<![endif]-->
+    <script type="text/javascript" src="blech.js"></script>
+    <script type="text/javascript" src="ncover.js"></script>
+  </head>
+  <body>
+    <div id="hdrbar">
+      <div id="hdrbar_left">
+        <a href="coveragesummary.html" target="doc">MyTaxes.PwC.questionnaire-admin-integration.com</a>
+      </div>
+    </div>
+    <div id="content">
+      
+
+<div id="page_title">
+  <em>All Sources for the Project</em>
+  <h1>MyTaxes.PwC.questionnaire-admin-integration.com Sources Summary</h1>
+</div>
+
+
+
+<div id="page_stats">
+	<div id="left">
+		<p>Symbol Coverage: <span class="highlight uncovered">73.43%</span> (246 of 335)</p><p>Branch Coverage: <span class="highlight uncovered">79.92%</span> (203 of 254)</p><p>Method Coverage: <span class="highlight uncovered">79.67%</span> (196 of 246)</p><p>Cyclomatic Complexity Avg: <span class="highlight">1.06</span> Max:<span class="highlight acceptable">6</span> </p>
+
+<p>
+  Modules:
+  <span class="highlight">2</span>
+</p>
+
+<p>
+  Namespaces:
+  <span class="highlight">4</span>
+</p>
+
+<p>
+  Classes:
+  <span class="highlight">35</span>
+</p>
+
+<p>
+  Methods:
+  <span class="highlight">246</span>
+</p>
+
+<p>
+  Documents:
+  <span class="highlight">18</span>
+</p>
+	</div>
+	
+		<div id="right">
+			<div id="trendTitle">Symbol Coverage Trend</div>
+			<div id="trendGraph"></div>
+			View: <select id="trendSelect">
+				<option>Symbol Coverage</option>
+				<option>Branch Coverage</option>
+				
+					<option>Method Coverage</option>
+				
+					<option>Maximum Cyclomatic Complexity</option>
+				
+			</select>
+		</div>
+	
+</div>
+<br style="clear: both;" />
+
+
+	<script type="text/javascript">
+		/* set up an array of data for the graph */
+		
+		var data = [
+						
+[100.00, 100.00, 100.00, 0] ,
+[100.00, 100.00, 100.00, 0] ,
+[100.00, 100.00, 100.00, 0] ,
+[100.00, 100.00, 100.00, 0] ,
+[84.31, 89.29, 87.74, 4] ,
+[84.31, 89.29, 87.74, 4] ,
+[84.31, 89.29, 87.74, 4] ,
+[84.31, 89.29, 87.74, 4] ,
+[84.31, 89.29, 87.74, 4] ,
+[84.31, 89.29, 87.74, 4] ,
+[84.31, 89.29, 87.74, 4] ,
+[84.31, 89.29, 87.74, 4] ,
+[87.76, 90.91, 90.07, 4] ,
+[87.94, 90.48, 90.13, 4] ,
+[87.94, 90.59, 90.26, 4] ,
+[86.47, 89.27, 88.68, 4] ,
+[83.62, 87.56, 87.50, 6] ,
+[83.62, 87.56, 87.50, 6] ,
+[83.76, 86.67, 87.57, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.81, 87.72, 6] ,
+[83.76, 86.41, 87.28, 6] ,
+[83.76, 86.41, 87.28, 6] ,
+[83.76, 86.41, 87.28, 6] ,
+[83.76, 86.41, 87.28, 6] ,
+[83.76, 86.41, 87.28, 6] ,
+[83.76, 86.41, 87.28, 6] ,
+[83.76, 86.41, 87.28, 6] ,
+[83.76, 86.02, 86.86, 6] ,
+[83.76, 86.02, 86.86, 6] ,
+[83.76, 86.02, 86.86, 6] ,
+[83.76, 86.02, 86.86, 6] ,
+[83.76, 86.02, 86.86, 6] ,
+[83.76, 84.74, 85.47, 6] ,
+[83.76, 84.74, 85.47, 6] ,
+[83.76, 84.74, 85.47, 6] ,
+[83.76, 84.74, 85.47, 6] ,
+[83.76, 84.74, 85.47, 6] ,
+[83.76, 84.74, 85.47, 6] ,
+[83.76, 84.74, 85.47, 6] ,
+[83.76, 84.74, 85.47, 6] ,
+[83.76, 84.74, 85.47, 6] ,
+[83.76, 84.74, 85.47, 6] ,
+[83.76, 84.74, 85.47, 6] ,
+[100.00, 85.97, 85.47, 6] ,
+[83.76, 84.74, 85.47, 6] ,
+[83.76, 84.74, 85.47, 6] ,
+[83.76, 84.74, 85.47, 6] ,
+[83.76, 84.38, 85.08, 6] ,
+[83.76, 84.38, 85.08, 6] ,
+[83.76, 84.38, 85.08, 6] ,
+[83.76, 84.38, 85.08, 6] ,
+[100.00, 87.10, 86.86, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.76, 84.90, 85.64, 6] ,
+[83.40, 84.90, 85.64, 6] ,
+[83.40, 84.90, 85.64, 6] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[0.00, 0.00, 0.00, 1] ,
+[84.15, 84.16, 84.97, 6] ,
+[84.15, 84.16, 84.97, 6] ,
+[84.15, 84.16, 84.97, 6] ,
+[84.15, 84.16, 84.97, 6] ,
+[84.15, 84.16, 84.97, 6] ,
+[84.15, 84.16, 84.97, 6] ,
+[84.15, 84.16, 84.97, 6] ,
+[84.15, 84.16, 84.97, 6] ,
+[84.15, 84.16, 84.97, 6] ,
+[84.15, 84.16, 84.97, 6] ,
+[84.15, 84.16, 84.97, 6] ,
+[84.15, 84.16, 84.97, 6] ,
+[84.15, 84.16, 84.97, 6] ,
+[84.15, 85.00, 85.86, 6] ,
+[84.15, 85.00, 85.86, 6] ,
+[84.15, 85.00, 85.86, 6] ,
+[84.15, 85.00, 85.86, 6] ,
+[84.15, 85.00, 85.86, 6] ,
+[84.15, 85.00, 85.86, 6] ,
+[84.15, 85.00, 85.86, 6] ,
+[84.15, 85.00, 85.86, 6] ,
+[84.15, 85.00, 85.86, 6] ,
+[84.15, 85.00, 85.86, 6] ,
+[84.15, 85.00, 85.86, 6] ,
+[84.15, 85.00, 85.86, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[84.02, 85.00, 85.79, 6] ,
+[82.66, 84.16, 84.90, 6] ,
+[82.66, 84.16, 84.90, 6] ,
+[82.66, 83.17, 83.84, 6] ,
+[82.66, 81.94, 82.52, 6] ,
+[82.66, 81.94, 82.52, 6] ,
+[82.66, 81.94, 82.52, 6] ,
+[82.66, 81.94, 82.52, 6] ,
+[82.66, 81.94, 82.52, 6] ,
+[82.66, 81.94, 82.52, 6] ,
+[84.08, 82.71, 83.33, 6] ,
+[84.08, 82.71, 83.33, 6] ,
+[84.08, 82.71, 83.33, 6] ,
+[84.08, 82.71, 83.33, 6] ,
+[84.08, 82.71, 83.33, 6] ,
+[84.08, 82.71, 83.33, 6] ,
+[84.08, 82.71, 83.33, 6] ,
+[84.08, 82.71, 83.33, 6] ,
+[84.08, 82.71, 83.33, 6] ,
+[84.08, 82.71, 83.33, 6] ,
+[84.08, 82.71, 83.33, 6] ,
+[84.08, 82.71, 83.33, 6] ,
+[84.08, 82.71, 83.33, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.06, 82.33, 82.52, 6] ,
+[83.13, 82.03, 82.21, 6] ,
+[83.13, 82.03, 82.21, 6] ,
+[83.13, 82.03, 82.21, 6] ,
+[83.13, 82.03, 82.21, 6] ,
+[83.13, 82.03, 82.21, 6] ,
+[83.13, 82.03, 82.21, 6] ,
+[83.13, 82.03, 82.21, 6] ,
+[79.92, 81.28, 81.43, 6] ,
+[79.92, 81.28, 81.43, 6] ,
+[79.92, 81.28, 81.43, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[100.00, 83.33, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.74, 82.38, 6] ,
+[81.47, 81.90, 82.55, 6] ,
+[81.47, 81.90, 82.55, 6] ,
+[81.47, 81.90, 82.55, 6] ,
+[81.47, 81.90, 82.55, 6] ,
+[81.47, 81.90, 82.55, 6] ,
+[81.47, 81.90, 82.55, 6] ,
+[81.47, 81.90, 82.55, 6] ,
+[81.47, 81.90, 82.55, 6] ,
+[81.47, 81.90, 82.55, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[100.00, 79.92, 78.48, 6] ,
+[100.00, 79.92, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.35, 78.48, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.61, 78.11, 78.22, 6] ,
+[73.97, 78.30, 78.22, 6] ,
+[73.97, 78.30, 78.22, 6] ,
+[73.97, 78.30, 78.22, 6] ,
+[73.97, 78.30, 78.22, 6] ,
+[73.97, 78.30, 78.22, 6] ,
+[73.97, 78.30, 78.22, 6] ,
+[73.97, 78.30, 78.22, 6] ,
+[73.97, 78.30, 78.22, 6] ,
+[100.00, 79.85, 78.22, 6] ,
+[73.97, 78.30, 78.22, 6] ,
+[73.97, 78.06, 77.97, 6] ,
+[73.97, 78.06, 77.97, 6] ,
+[73.97, 78.30, 78.22, 6] ,
+[73.97, 78.30, 78.22, 6] ,
+[73.97, 78.30, 78.22, 6] ,
+[73.27, 79.92, 79.51, 6] ,
+[73.27, 79.92, 79.51, 6] ,
+[73.43, 79.92, 79.67, 6] ,
+[73.43, 79.92, 79.67, 6] ,
+[73.43, 79.92, 79.67, 6] ,
+[73.43, 79.92, 79.67, 6] ,
+[73.43, 79.92, 79.67, 6] ,
+[73.43, 79.92, 79.67, 6] ,
+[73.43, 79.92, 79.67, 6] ,
+[73.43, 79.92, 79.67, 6] ,
+[73.43, 79.92, 79.67, 6] ,
+[73.43, 79.92, 79.67, 6] ,
+[73.43, 79.92, 79.67, 6] ,
+[73.43, 79.92, 79.67, 6] ,
+[73.43, 79.92, 79.67, 6] ,
+[73.43, 79.92, 79.67, 6] ,
+[73.43, 79.92, 79.67, 6] ,
+[73.43, 79.92, 79.67, 6] 
+					];
+
+		var trends = [ 0.00,
+					   0.00,
+					   0.00,
+					   0 ];
+					   
+		Event.observe(window, 'load', function() {
+			renderGraph();
+		});
+		Event.observe($('trendSelect'), 'change', renderGraphUpdate);
+		Event.observe($('trendSelect'), 'keyup', renderGraphUpdate);
+	</script>
+
+	<h2>Documents</h2>
+
+  <table class="sortable">
+    <tr>
+      <th>Document</th>
+      <th class="sorttable_numeric">Symbol Coverage</th>
+      <th class="sorttable_numeric">Branch Coverage</th>
+      <th class="sorttable_numeric">Method Coverage</th>
+      
+		<th class="sorttable_numeric">Cycl. Complexity</th>
+      
+    </tr>
+    
+    
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/keLpbR4asAS5IMhjUL9Usg0WMVIg0x2VHFIoyEd5hGY.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration\PreviewableAllCQSRedirect\PreviewableAllCQSRedirectController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 13
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/pm4IqiUGLefW0hsSqaZNNIWuIZ0CPasr165EauWzY0.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration\PreviewableCQSDataElementRedirect\PreviewableCQSDataElementRedirectController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 11
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/XL07qtBugnFXwVdI1w2WX898hVLwv5PBDCJQIaWbtc.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration\PreviewableDataElementRedirect\PreviewableDataElementRedirectController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 10
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/7BpTy6oxNWStcUfbmPW3JKKrreMhwr4yhPMF5U.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration-api\FrozenPreviewGDERepository.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 40
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 10
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 11
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/vuhm3JVopKgDJ6uGWEpnclqnENian9EvuiUccAYoe4.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration-api\InMemoryCache.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    65.71% : 
+    23 of 35
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 65.71%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    71.43% : 
+    15 of 21
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 71.43%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    69.23% : 
+    9 of 13
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 69.23%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 2.00
+  
+  Max:
+  <span class="acceptable">
+    6
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/Qkiyql3f0paJUb8GtFmPJ0WTws0cCzQI9MMcxH5alPE.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration-api\FrozenGDERepository.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="acceptable">
+    95.65% : 
+    44 of 46
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 95.65%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    93.33% : 
+    14 of 15
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 93.33%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="acceptable">
+    94.12% : 
+    16 of 17
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 94.12%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.06
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/mTnADfbMYfZnVmL0atpwx5hgviMDcBN7mG8CH9IlX8.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration-api\DataElementConverter.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="acceptable">
+    98.46% : 
+    64 of 65
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 98.46%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    26 of 26
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="acceptable">
+    96.97% : 
+    32 of 33
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 96.97%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.36
+  
+  Max:
+  <span class="acceptable">
+    4
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/G92yxnR5IpsAbd8VfoCptZaf41wBrPdBgS5QWQSGU.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration-api\FrozenDataElement.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    6 of 6
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    74.07% : 
+    20 of 27
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 74.07%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    74.07% : 
+    20 of 27
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 74.07%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/sCLK4nCMAwO9NDVkVqbdStC4irHsLnUJzSgYdrOY0.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration-api\FrozenDataField.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    60.71% : 
+    17 of 28
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 60.71%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    60.71% : 
+    17 of 28
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 60.71%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/KeAKeLOVc9VFHYOrQ5Yqr5KYDmiRE1KfYcYQHNaOh0.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration-api\FrozenGde.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    8 of 8
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    3 of 3
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    3 of 3
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/PJS2v3szgg3FQrMQFgAoRcDROodW99NOnFA5d9XHs.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration-api\FrozenQuestionSet.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    88.46% : 
+    23 of 26
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 88.46%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="acceptable">
+    88.46% : 
+    23 of 26
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 88.46%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/w9rQK2NhBfv61yd56nkNEY82XQzGDRjXfk6eZqYLJiI.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration-api\FrozenQuestionSetRepository.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    55 of 55
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="acceptable">
+    96.88% : 
+    31 of 32
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 96.88%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    26 of 26
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.50
+  
+  Max:
+  <span class="acceptable">
+    4
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/1DsNqT9IeBtPA48XjOGfvPPODCHnW1gsg9awIkZhw.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration-api\FrozenSection.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    6 of 6
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    94.74% : 
+    18 of 19
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 94.74%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="acceptable">
+    94.74% : 
+    18 of 19
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 94.74%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/qn09RnChOGN5ZFHDqxxhJGZN2AaYk0Mi1JYNe6FFuw.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration-api\FrozenVisualGroup.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    75.00% : 
+    6 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 75.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    75.00% : 
+    6 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 75.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/Oi7Hx7IBSvTrYMPvtJO9qpsK8wq90EtNhscIOGBic.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration-api\FrozenVisualStep.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    75.00% : 
+    6 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 75.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    75.00% : 
+    6 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 75.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/Mu3Q8dNDse5eCJS1cr4Z6KIqnV7pZWDa9EPmAnDW0.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration-api\GetTranslationStringExtension.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    3 of 3
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    1 of 1
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 2.00
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/XdqxDl56MmIKKZSzf0dLwdz03YmkGYLOCfh5IFo4jWE.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration-api\SectionConverter.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    20 of 20
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    9 of 9
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    7 of 7
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.29
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/ZQdW5ZGs3ctgXD72lBUebrw5yWidRXeEZ4kBv3Ae4.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\questionnaire-admin-integration-api\TQIntegrationModule.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+    
+  </table>
+  
+    </div>
+    <div id="footer">
+	  Generated By  
+      <a href="http://www.ncover.com" target="_top">NCover</a><br />
+    </div>
+  </body>
+</html>

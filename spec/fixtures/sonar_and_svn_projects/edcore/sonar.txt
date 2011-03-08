@@ -1,0 +1,2 @@
+com.biomedcentral.business.publishing.process.EmailArchiveCommand 37.0
+com.biomedcentral.business.publishing.process.ProformaEmailBuilder 32.5

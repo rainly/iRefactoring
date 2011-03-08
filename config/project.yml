@@ -1,0 +1,12 @@
+:name: Biomed
+:vcs: Svn
+#:vcs: Hg
+:complexity_provider: Sonar
+#:complexity_provider: Ncover
+:language: java
+#:language: csharp
+:class_path: 
+#:class_path: c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\
+:projects:
+    - edcore
+    - editor

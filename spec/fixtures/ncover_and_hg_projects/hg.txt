@@ -1,0 +1,15 @@
+changeset:   16049:8a98bcc6198a
+tag:         tip
+user:        pwc-dev-02
+date:        Mon Feb 28 18:24:25 2011 +0800
+files:       src/integration-provision/ProvisionService.cs
+description:
+[niuyi]Skip FT
+
+
+changeset:   16047:852c8df39533
+user:        pwc-dev-05
+date:        Tue Mar 01 10:37:42 2011 +0800
+files:       src/crm/crm-integration/AssigneeMessageUserSynchronizer.cs src/integration-provision/ProvisionService.cs toolkit/libs/paver.py
+description:
+[niuyi]refacotrying ft

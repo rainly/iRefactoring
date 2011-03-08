@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    color: black;
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    font: 13.34px helvetica,arial,freesans,clean,sans-serif;
+}
+
+body * {
+    line-height: 1.4em;
+}
+
+#main {
+    background: url("/images/header/background-v2.png") repeat-x scroll 0 0 #FFFFFF;
+}
+
+#header {
+    border-bottom: medium none;
+    margin-bottom: 0;
+	height: 71px;
+    margin: 0 auto 15px;
+    min-width: 950px;
+    width: 958px;
+}
+
+#header .logo {
+	font: 30px arial;
+	padding-top: 20px;
+}
+
+.site {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 920px;
+}
+
+.pagehead {
+    background: url("/images/header/background-white.png") no-repeat scroll 0 0 transparent;
+    margin: -20px 0 10px -25px;
+    padding: 5px 25px 0;
+    position: relative;
+    width: 920px;
+}
+
+.pagehead ul.tabs {
+    -moz-border-radius: 5px 5px 5px 5px;
+    background: url("/images/header/tab_background.gif") repeat-x scroll 0 0 transparent;
+    border: 1px solid #DDDDDD;
+    height: 26px;
+    margin: 10px 0 0;
+    padding: 6px 10px;
+    position: relative;
+}
+
+.pagehead ul.tabs li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+}
+
+.pagehead ul.tabs li a.selected {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #CCCCCC #EEEEEE #EEEEEE #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
+    color: #333333;
+    font-weight: bold;
+    position: relative;
+    top: -1px;
+}
+
+.pagehead ul.tabs li a {
+    -moz-border-radius: 4px 4px 4px 4px;
+    color: #666666;
+    float: left;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 10px;
+    padding: 0 8px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+
+.usingMouse a {
+    outline: medium none;
+}

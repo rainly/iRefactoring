@@ -1,0 +1,13 @@
+------------------------------------------------------------------------
+r49035 | david.farrugia | 2011-02-17 20:20:24 +0800 (Thu, 17 Feb 2011) | 1 line
+Changed paths:
+   M /workflow/trunk/editor/src/main/java/com/biomedcentral/application/editor/controllers/ManuscriptNoCorrectionsController.java
+   A /workflow/trunk/editor/src/test/java/com/biomedcentral/application/editor/controllers/ManuscriptNoCorrectionsControllerTest.java
+
+Card #2232 Move "no editor corrections" to Java
+------------------------------------------------------------------------
+r48947 | carlos.fernandez | 2011-02-16 01:40:54 +0800 (Wed, 16 Feb 2011) | 1 line
+Changed paths:
+   M /workflow/trunk/administrator/pom.xml
+   A /workflow/trunk/editor/src/main/java/com/biomedcentral/application/editor/controllers/ManuscriptNoCorrectionsController.java
+   A /workflow/trunk/editor/src/test/resource/ResourceCodeWouldShowAsCommits.java

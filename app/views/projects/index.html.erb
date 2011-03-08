@@ -1,0 +1,22 @@
+<script type="text/javascript" src="/javascripts/swfobject.js"></script>
+
+<div class="pagehead">
+	<ul class="tabs">
+		<li><a href="/">Introduction</a></li>
+		<li><a class="selected" href="/projects">Projects</a></li>
+		<li><a href="/configuration">Configuration</a></li>
+		<li><a href="/acknowledgement">Acknowledgement</a></li>
+	</ul>
+</div>
+<div class="projects">
+	<ul class="tabs">		
+		<% @projects.each do |project|%>
+			<li><%= link_to_remote project, :url => { :controller => 'plots', :action => 'show', :id => project}, :method => 'GET', 
+			:update => 'plot-graph' %></li>
+		<% end %>
+	</ul>
+</div>
+<div id="plot-graph">
+	<%= @graph %>
+</div>
+	

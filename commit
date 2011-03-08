@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+svn up && \
+rake svn:add_untracked && \
+svn ci -m "$1"

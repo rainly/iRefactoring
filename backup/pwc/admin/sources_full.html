@@ -1,0 +1,4671 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<!-- saved from url=(0022)http://www.ncover.com/ -->
+    <title>NCover Code Coverage Report - MyTaxes.PwC.admin.com</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+	<link rel="stylesheet" type="text/css" href="default.css" />
+	
+	<script type="text/javascript" src="sorttable.js"></script>
+    <script type="text/javascript" src="prototype.js"></script>
+    <!--[if IE]>
+		<script type="text/javascript" src="excanvas.js"></script>
+	<![endif]-->
+    <script type="text/javascript" src="blech.js"></script>
+    <script type="text/javascript" src="ncover.js"></script>
+  </head>
+  <body>
+    <div id="hdrbar">
+      <div id="hdrbar_left">
+        <a href="coveragesummary.html" target="doc">MyTaxes.PwC.admin.com</a>
+      </div>
+    </div>
+    <div id="content">
+      
+
+<div id="page_title">
+  <em>All Sources for the Project</em>
+  <h1>MyTaxes.PwC.admin.com Sources Summary</h1>
+</div>
+
+
+
+<div id="page_stats">
+	<div id="left">
+		<p>Symbol Coverage: <span class="highlight uncovered">68.64%</span> (1311 of 1910)</p><p>Branch Coverage: <span class="highlight uncovered">68.91%</span> (747 of 1084)</p><p>Method Coverage: <span class="highlight uncovered">69.97%</span> (636 of 909)</p><p>Cyclomatic Complexity Avg: <span class="highlight">1.11</span> Max:<span class="highlight acceptable">8</span> </p>
+
+<p>
+  Modules:
+  <span class="highlight">10</span>
+</p>
+
+<p>
+  Namespaces:
+  <span class="highlight">33</span>
+</p>
+
+<p>
+  Classes:
+  <span class="highlight">149</span>
+</p>
+
+<p>
+  Methods:
+  <span class="highlight">909</span>
+</p>
+
+<p>
+  Documents:
+  <span class="highlight">86</span>
+</p>
+	</div>
+	
+		<div id="right">
+			<div id="trendTitle">Symbol Coverage Trend</div>
+			<div id="trendGraph"></div>
+			View: <select id="trendSelect">
+				<option>Symbol Coverage</option>
+				<option>Branch Coverage</option>
+				
+					<option>Method Coverage</option>
+				
+					<option>Maximum Cyclomatic Complexity</option>
+				
+			</select>
+		</div>
+	
+</div>
+<br style="clear: both;" />
+
+
+	<script type="text/javascript">
+		/* set up an array of data for the graph */
+		
+		var data = [
+						
+[15.55, 18.99, 22.00, 63] ,
+[15.55, 18.99, 22.00, 63] ,
+[81.48, 79.35, 78.62, 5] ,
+[81.48, 79.35, 78.62, 5] ,
+[81.48, 79.35, 78.62, 5] ,
+[81.48, 79.35, 78.62, 5] ,
+[81.48, 79.35, 78.62, 5] ,
+[81.69, 79.38, 78.65, 5] ,
+[79.98, 78.41, 78.49, 5] ,
+[79.98, 78.41, 78.49, 5] ,
+[79.83, 78.32, 78.39, 5] ,
+[79.83, 78.32, 78.39, 5] ,
+[78.94, 77.80, 77.78, 5] ,
+[78.92, 77.78, 77.75, 5] ,
+[78.77, 77.61, 77.75, 5] ,
+[78.77, 77.61, 77.75, 5] ,
+[78.77, 77.61, 77.75, 5] ,
+[78.77, 77.61, 77.75, 5] ,
+[78.77, 77.61, 77.75, 5] ,
+[78.77, 77.61, 77.75, 5] ,
+[78.77, 77.61, 77.75, 5] ,
+[78.77, 77.61, 77.75, 5] ,
+[78.77, 77.61, 77.75, 5] ,
+[78.77, 77.61, 77.75, 5] ,
+[78.77, 77.61, 77.75, 5] ,
+[78.77, 77.61, 77.75, 5] ,
+[78.77, 77.61, 77.75, 5] ,
+[78.77, 77.61, 77.75, 5] ,
+[78.77, 77.61, 77.75, 5] ,
+[78.39, 77.35, 77.65, 5] ,
+[78.39, 77.35, 77.65, 5] ,
+[78.39, 77.35, 77.65, 5] ,
+[78.39, 77.35, 77.65, 5] ,
+[78.39, 77.35, 77.65, 5] ,
+[78.39, 77.33, 77.62, 5] ,
+[78.39, 77.33, 77.62, 5] ,
+[78.39, 77.33, 77.62, 5] ,
+[78.39, 77.33, 77.62, 5] ,
+[78.39, 77.33, 77.62, 5] ,
+[79.41, 78.01, 78.23, 5] ,
+[79.41, 78.01, 78.23, 5] ,
+[79.41, 78.01, 78.23, 5] ,
+[79.41, 78.01, 78.23, 5] ,
+[79.41, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.42, 78.01, 78.23, 5] ,
+[79.60, 78.53, 78.78, 5] ,
+[79.60, 78.53, 78.78, 5] ,
+[79.60, 78.53, 78.78, 5] ,
+[79.62, 78.56, 78.81, 5] ,
+[79.62, 78.56, 78.81, 5] ,
+[79.62, 78.56, 78.81, 5] ,
+[79.62, 78.56, 78.81, 5] ,
+[79.62, 78.56, 78.81, 5] ,
+[79.53, 78.39, 78.61, 5] ,
+[79.53, 78.39, 78.61, 5] ,
+[79.53, 78.39, 78.61, 5] ,
+[79.53, 78.39, 78.61, 5] ,
+[79.53, 78.39, 78.61, 5] ,
+[79.53, 78.39, 78.61, 5] ,
+[79.53, 78.39, 78.61, 5] ,
+[79.53, 78.39, 78.61, 5] ,
+[79.53, 78.39, 78.61, 5] ,
+[79.56, 78.41, 78.69, 5] ,
+[79.56, 78.41, 78.69, 5] ,
+[79.56, 78.41, 78.69, 5] ,
+[79.56, 78.41, 78.69, 5] ,
+[79.56, 78.41, 78.69, 5] ,
+[79.56, 78.41, 78.69, 5] ,
+[79.56, 78.41, 78.69, 5] ,
+[79.56, 78.41, 78.69, 5] ,
+[79.56, 78.41, 78.69, 5] ,
+[79.56, 78.41, 78.69, 5] ,
+[79.56, 78.41, 78.69, 5] ,
+[79.56, 78.41, 78.69, 5] ,
+[79.56, 78.41, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.58, 78.46, 78.69, 5] ,
+[79.63, 78.50, 78.69, 5] ,
+[79.58, 78.50, 78.69, 5] ,
+[79.58, 78.50, 78.69, 5] ,
+[79.48, 78.43, 78.58, 5] ,
+[79.48, 78.43, 78.58, 5] ,
+[79.48, 78.43, 78.58, 5] ,
+[79.48, 78.43, 78.58, 5] ,
+[79.48, 78.43, 78.58, 5] ,
+[79.48, 78.43, 78.58, 5] ,
+[79.38, 78.18, 78.48, 5] ,
+[79.38, 78.18, 78.48, 5] ,
+[79.38, 78.18, 78.48, 5] ,
+[79.38, 78.18, 78.48, 5] ,
+[79.39, 78.23, 78.54, 5] ,
+[79.39, 78.23, 78.54, 5] ,
+[79.39, 78.23, 78.54, 5] ,
+[79.39, 78.23, 78.54, 5] ,
+[79.39, 78.23, 78.54, 5] ,
+[79.39, 78.23, 78.54, 5] ,
+[79.39, 78.23, 78.54, 5] ,
+[79.39, 78.23, 78.54, 5] ,
+[79.39, 78.23, 78.54, 5] ,
+[79.39, 78.23, 78.54, 5] ,
+[79.39, 78.23, 78.54, 5] ,
+[79.39, 78.23, 78.54, 5] ,
+[79.06, 78.48, 78.54, 5] ,
+[100.00, 78.27, 78.54, 5] ,
+[79.06, 78.48, 78.54, 5] ,
+[79.06, 78.48, 78.54, 5] ,
+[78.77, 78.31, 78.34, 5] ,
+[78.68, 78.14, 78.14, 5] ,
+[78.68, 78.14, 78.14, 5] ,
+[78.68, 78.14, 78.14, 5] ,
+[78.68, 78.14, 78.14, 5] ,
+[78.68, 78.14, 78.14, 5] ,
+[78.68, 78.14, 78.14, 5] ,
+[78.79, 78.22, 78.20, 5] ,
+[78.79, 78.22, 78.20, 5] ,
+[78.79, 78.22, 78.20, 5] ,
+[78.79, 78.22, 78.20, 5] ,
+[78.79, 78.22, 78.20, 5] ,
+[78.79, 78.22, 78.20, 5] ,
+[78.79, 78.22, 78.20, 5] ,
+[78.79, 78.22, 78.20, 5] ,
+[78.79, 78.22, 78.20, 5] ,
+[78.25, 77.77, 77.89, 5] ,
+[78.25, 77.77, 77.89, 5] ,
+[78.31, 77.83, 77.99, 5] ,
+[78.08, 77.89, 77.86, 5] ,
+[78.08, 77.89, 77.86, 5] ,
+[78.08, 77.89, 77.86, 5] ,
+[77.60, 76.77, 76.51, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[100.00, 75.00, 75.37, 5] ,
+[100.00, 75.00, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.11, 75.64, 75.37, 5] ,
+[76.02, 75.56, 75.28, 5] ,
+[76.02, 75.56, 75.28, 5] ,
+[76.02, 75.56, 75.28, 5] ,
+[76.02, 75.56, 75.28, 5] ,
+[76.02, 75.56, 75.28, 5] ,
+[76.02, 75.56, 75.28, 5] ,
+[76.02, 75.56, 75.28, 5] ,
+[76.02, 75.56, 75.28, 5] ,
+[76.02, 75.56, 75.28, 5] ,
+[76.07, 75.50, 75.15, 5] ,
+[76.07, 75.50, 75.15, 5] ,
+[76.07, 75.50, 75.15, 5] ,
+[76.07, 75.50, 75.15, 5] ,
+[76.07, 75.50, 75.15, 5] ,
+[76.07, 75.50, 75.15, 5] ,
+[76.07, 75.50, 75.15, 5] ,
+[76.07, 75.50, 75.15, 5] ,
+[76.07, 75.50, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[100.00, 74.72, 75.15, 5] ,
+[76.07, 75.34, 75.15, 5] ,
+[74.90, 74.75, 75.21, 7] ,
+[74.90, 74.75, 75.21, 7] ,
+[74.90, 74.75, 75.21, 7] ,
+[74.90, 74.75, 75.21, 7] ,
+[74.90, 74.75, 75.21, 7] ,
+[74.14, 73.88, 74.27, 8] ,
+[71.91, 71.02, 72.16, 8] ,
+[71.91, 71.02, 72.16, 8] ,
+[71.91, 71.02, 72.16, 8] ,
+[71.91, 71.02, 72.16, 8] ,
+[71.91, 71.02, 72.16, 8] ,
+[71.91, 71.02, 72.16, 8] ,
+[70.43, 70.02, 71.03, 8] ,
+[70.43, 70.02, 71.03, 8] ,
+[70.43, 70.02, 71.03, 8] ,
+[70.43, 70.02, 71.03, 8] ,
+[70.43, 69.96, 71.03, 8] ,
+[70.18, 69.73, 70.97, 8] ,
+[70.18, 69.78, 70.97, 8] ,
+[70.18, 69.72, 70.97, 8] ,
+[70.11, 69.65, 70.89, 8] ,
+[68.81, 68.82, 70.11, 8] ,
+[68.64, 68.91, 69.97, 8] ,
+[68.64, 68.91, 69.97, 8] 
+					];
+
+		var trends = [ 0.00,
+					   0.00,
+					   0.00,
+					   0 ];
+					   
+		Event.observe(window, 'load', function() {
+			renderGraph();
+		});
+		Event.observe($('trendSelect'), 'change', renderGraphUpdate);
+		Event.observe($('trendSelect'), 'keyup', renderGraphUpdate);
+	</script>
+
+	<h2>Documents</h2>
+
+  <table class="sortable">
+    <tr>
+      <th>Document</th>
+      <th class="sorttable_numeric">Symbol Coverage</th>
+      <th class="sorttable_numeric">Branch Coverage</th>
+      <th class="sorttable_numeric">Method Coverage</th>
+      
+		<th class="sorttable_numeric">Cycl. Complexity</th>
+      
+    </tr>
+    
+    
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/o8WfTkmCZCU5ORyqun0icVeY1k9V9Q3HDeQgQ5S4wI.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Controllers\AccountController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 18
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 5
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 4
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.25
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/QayD26XsZP0KIKQSySKNeov4RqhKQ6E4cJiki23xvg.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Controllers\CalendarManagementController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 13
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 4
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 4
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/lFtYa68CFgoXCo0MWDVBKD9ie1SQouh0ZAsTvFQcW7A.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Controllers\ClientBasedManagementController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/vhn3Vo8u7DYs4fxPuigONkiGzZwdGTE4gwwmhIYoE9A.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Controllers\DiagnosisController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/CFzYLr7KmhpV3GciBUjmRkkgmvYlLcOgBMuCkJhoejU.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Controllers\HomeController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 7
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/2Qll1Z01wU2vL5OENqBzyOa81QBK8QA2v7zPJGJU.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Controllers\MigrationController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/3pfXag4cfWpcVQhDu3ZCnM74bSJY0GFmAZLFJnIpPA.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Controllers\MigrationMonitorController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/rPRANxIAe6VqWufrFjRotE4MccpRmTNpuXXAdtBraFo.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Controllers\OrganizerController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 11
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/W71UnYYB8UGulNKNIADW34Of6j3FruJ19Mku44EoM.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Controllers\StaffAssigneeConnectionController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 26
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 13
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 3.33
+  
+  Max:
+  <span class="acceptable">
+    8
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/tVjomPqWCZAQmXqRr6b86c3Dmr1xL4KbqRKn3ZACc.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Controllers\TaxpayerDetailsController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 7
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/YZwo3Au1OIGzC44uQwPGmYcGvc7dr6bCB8dIlrA7Nk.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Controllers\TaxpayerMigrationController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 13
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 7
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.67
+  
+  Max:
+  <span class="acceptable">
+    3
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/bwuF6318HzM9MboNS7CsrJoHdUYfMKWj0BE2yuK8.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Controllers\TaxStatusController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 17
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 6
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 6
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/3jmbkoMf0iGq0TbOUh6H8P40tf6nik3j46hBJcNM.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Default.aspx.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 6
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/Ts7VbnJe6TMl6cQ9waesrJuF25ifxJQdSt1IW0w1ls.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Global.asax.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 48
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 15
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 12
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.25
+  
+  Max:
+  <span class="acceptable">
+    3
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/9UjN9FXhfby7rXn7tIJP2bR3cQ6rZegIS0gtchtkc.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Models\TaxpayerStatusForm.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 18
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 27
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 19
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.32
+  
+  Max:
+  <span class="acceptable">
+    5
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/MR2jwoK7LC8AWOktGoOsK3bWezG5mBTj7sAN86Wb8I.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Services\TaxpayerMigrationStatusService.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 25
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 2.00
+  
+  Max:
+  <span class="acceptable">
+    3
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/1nLFjiWYAV8Xe7zixKJ1suCy8Om1ENPMKnzOKyPze8.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\Impersonation\_Configuration\ImpersonationAdminConfig.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 6
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/raoaOjTZURbDb2jOfgeQxPdgJ7Y9m46HbyOiTO5MZoY.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\Impersonation\Controllers\ImpersonationController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 22
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 5
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 5
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/XO17jxmLyqc7bHMxpMzQ4UynOooyYnHLMeVfc3w.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\Impersonation\Controllers\ImpersonationSearchResultForm.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 11
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 4
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 4
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/It2dpyX80m4HjOtp4ZEZKWwoZRrxgGpPRY4t1WYtA0U.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\impersonation-ticket\ImpersonationTicketRepository.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    50.00% : 
+    1 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 50.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    50.00% : 
+    1 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 50.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/pm9YeVu2DyuWeApwCzOe48D58Mw1Dt0eVepq7jMQkqs.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\logdata-container\_Configuration\LogDBConfig.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 4
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 5
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/8M4Shq9ZjDVI8ks37FGPiYhaGPhaESw8W5AlIIRgP8.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\logdata-web\_Configuration\LogdataRoutesProvider.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/h20zHOlb53OOJJDIKpljcTwr2UfvHKzYSorg2aqAE.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\logdata-web\_Configuration\LogdataWebModule.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 9
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/OJB9f564VkSB9x2H36ZikEwlbwmgCsGFDTT0mswsdw.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\logdata-web\Controllers\ErrorController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 32
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 10
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 12
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/RFuR9rF6croDXpEkVwyh9KBWRmTopddB3oIy2vgaF4.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\logdata-web\Controllers\LogSegmentController.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 24
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 7
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 9
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/ClycCLRmEEX1ybGl0slFv39zkoLcCyUhnhmTjQIX9eo.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\notification-admin\FRORReset\AuditFRORResetObserver.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 5
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/7yQKuszzNTeX8Kjsj3qMnIkY32G7ORGh9Ej9TkAdpM.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\notification-admin\FRORReset\UpdateOrganizerFRORResetObserver.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 5
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/gwkhGkoXsAVTqoIN4HiK67E663Yrmgs0TMxv7bg88qw.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\notification-admin\NewMessageReceived\AssigneeNewMessageReceivedEventObserver.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 20
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 9
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 6
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.33
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/MjEwJL1DXZWo8omKIW2SbJrwR4CZIqh1cz87m6ZY8.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\notification-admin\NewMessageReceived\NewMessageReceivedMailWithoutAccount.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/zIUIdb9X3aiT9o6zLn66q0Yt86RHg2kwQxc3506LIvc.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\notification-admin\QuestionnaireActivating\QuestionnaireActivatingObserver.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/YEPebuvfMp19vB6EPDT76Vx5WaEda4yGOXKasr0.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\notification-admin\QuestionnaireDeactivating\QuestionnaireDeactivatingObserver.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    0.00% : 
+    0 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 0.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/erJ8zwHfP9fIgy1QZQVhAjpgQnQ9uyujYH45vt8HU.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\logdata-container\LogDBContainerFactory.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    26.67% : 
+    4 of 15
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 26.67%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    40.00% : 
+    2 of 5
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 40.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    33.33% : 
+    2 of 6
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 33.33%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/fEKcu1h3anN2Kw7sQzOX2uRA9rSNx7MdoDaVmHKas.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Services\AccountService.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    40.91% : 
+    18 of 44
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 40.91%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    45.45% : 
+    10 of 22
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 45.45%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    57.14% : 
+    4 of 7
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 57.14%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 2.86
+  
+  Max:
+  <span class="acceptable">
+    5
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/JemOfgXIjwH4fOSVuxgTQ2VEAQDiikOmg72xqfphk.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\logdata-web\Services\DownloadLogService.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    41.54% : 
+    27 of 65
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 41.54%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    36.00% : 
+    9 of 25
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 36.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    38.89% : 
+    7 of 18
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 38.89%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.56
+  
+  Max:
+  <span class="acceptable">
+    3
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/PAPgG9GJ4yiRg5dteMkP6eNzYuhVL7pJ5FTJvp8qQ.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\logdata-model\LogRepository.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    43.75% : 
+    14 of 32
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 43.75%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    45.45% : 
+    5 of 11
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 45.45%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    42.86% : 
+    3 of 7
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 42.86%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.29
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/yBvFf5jGii6BAdYUsPFulplQF1cRD5WPDpS9UK0.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Services\StaffAssigneeConnectionService.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    44.74% : 
+    17 of 38
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 44.74%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    27.27% : 
+    3 of 11
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 27.27%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    30.77% : 
+    4 of 13
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 30.77%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.31
+  
+  Max:
+  <span class="acceptable">
+    5
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/4Yc7BrGkZtR04CWlSVVrHuR4VlcbXtPd6218u6nkXzo.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\impersonation-ticket\ImpersonationTicket.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    50.00% : 
+    4 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 50.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    33.33% : 
+    1 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 33.33%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    33.33% : 
+    1 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 33.33%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/7CdjIZhVJ6Rg8AEZcIcif1psfBfLoE31pEfM7UDgFg.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\integration-api\Model\AcomUser.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    60.00% : 
+    3 of 5
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 60.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    66.67% : 
+    8 of 12
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 66.67%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="acceptable">
+    88.89% : 
+    8 of 9
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 88.89%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.22
+  
+  Max:
+  <span class="acceptable">
+    3
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/NfbtFgJS5cp7owLBS5nUEYLds6GJUhpKRouZsDxQUI.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\logdata-model\AssigneeLogIndex.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    62.50% : 
+    5 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 62.50%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    37.50% : 
+    3 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 37.50%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    28.57% : 
+    2 of 7
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 28.57%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.14
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/khizq1N6RwB311mF7tgqPdJR5JCTQV7ZHltOsA1hQ.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\logdata-model\OrganizerLogIndex.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    62.50% : 
+    5 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 62.50%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    37.50% : 
+    3 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 37.50%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    28.57% : 
+    2 of 7
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 28.57%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.14
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/gAK2EmU0936mN96H4ebAefSGzpOIxRV3oJ5Rused0.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\account-integration\AddClientToAssignee.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    64.71% : 
+    11 of 17
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 64.71%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    42.86% : 
+    3 of 7
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 42.86%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    66.67% : 
+    2 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 66.67%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.67
+  
+  Max:
+  <span class="acceptable">
+    3
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/ufEwBlPmpb6TTSDvIviCFlQUytIufQqTj20CDYUpKhg.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Services\CalendarManagementService.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    69.23% : 
+    18 of 26
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 69.23%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    75.00% : 
+    6 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 75.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    50.00% : 
+    2 of 4
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 50.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.75
+  
+  Max:
+  <span class="acceptable">
+    3
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/A7CH8i25mOKyxMgwaQ1wrhi8offiAbSR2Ch4s57Cs.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\integration-api\Model\GoAwareOption.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    70.37% : 
+    19 of 27
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 70.37%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    81.25% : 
+    13 of 16
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 81.25%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    75.00% : 
+    6 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 75.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.75
+  
+  Max:
+  <span class="acceptable">
+    3
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/ZIRUYZ3YnUHX2CVgL1nwmVYBzg73Hcwo6KXISvWsnk.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\notification-admin\AssigneeInvited\InitializeCalendarSettingsAfterInvited.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    77.78% : 
+    7 of 9
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 77.78%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    66.67% : 
+    2 of 3
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 66.67%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.50
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/UsoP0G9WKwPUxk7RdNQbVDaK916SPbkXdqpNu8Iu8.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\account-integration\AddContactsToAssigneeHandler.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    89.83% : 
+    53 of 59
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 89.83%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    92.86% : 
+    26 of 28
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 92.86%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="acceptable">
+    93.33% : 
+    14 of 15
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 93.33%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.67
+  
+  Max:
+  <span class="acceptable">
+    4
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/JLAXGJLAp6DhqO342WYCufr9PK9OqeyhEauiRE9M.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\notification-admin\AssigneeInvited\SendEmailAfterInvited.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    90.91% : 
+    10 of 11
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 90.91%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    3 of 3
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="acceptable">
+    80.00% : 
+    4 of 5
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 80.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/sL2pacnUpqezZAvfQLMfnzRl54BLvuU0NO7jdI8K5A.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\integration-api\Model\GoProfile.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="uncovered">
+    92.57% : 
+    374 of 404
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 92.57%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    92.12% : 
+    187 of 203
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 92.12%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="acceptable">
+    92.12% : 
+    187 of 203
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 92.12%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/DInAsyK8r6CMkzyPKHVIJ0UjQ1XKvX2VANQg4X5AI.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Services\TaxpayerDetailsForm\TaxDetailsItem.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="acceptable">
+    96.88% : 
+    31 of 32
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 96.88%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    93.75% : 
+    30 of 32
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 93.75%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="acceptable">
+    94.44% : 
+    17 of 18
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 94.44%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.50
+  
+  Max:
+  <span class="acceptable">
+    5
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/YD9fWoU3eNHnFW4xSD1U0hIQdSPCr8ULXh8dZ8EtTY.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\account-integration\_ExtensonPoints\AccountIntegrationModule.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    9 of 9
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/Mp7jqXBB7UWTSjQd5FPQx5gEX7IVrPkaQlr6JJnGE.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\account-integration\AssociateExtensions.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    1 of 1
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    1 of 1
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/EHEsNwunt2vPsaxANz6rLUZ8VTdrkTo21lr2nTom0Bw.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\account-integration\CultureInfoOfCountries.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    24 of 24
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    12 of 12
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 2.25
+  
+  Max:
+  <span class="acceptable">
+    5
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/gsbMMKQnPGFlEtDHJo6e9uzr2rsl0jczYFD6cQrzQ.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\account-integration\FillAccountSettingsFromGoProfileHandler.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    53 of 53
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    11 of 11
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    9 of 9
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.22
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/ruEoUbccv7wHtsIErvhFHtQqGzfrnMBiWsIaJeb8wpg.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\account-integration\GoEmailsMapper.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    26 of 26
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    16 of 16
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    8 of 8
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.88
+  
+  Max:
+  <span class="acceptable">
+    4
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/BPHfERP9ZVeyjIGYpgPSGxoMG7p1r0a2BIgGNKh8l4.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\account-integration\GoPhonesMapper.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    27 of 27
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    17 of 17
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    10 of 10
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.40
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/SbrCpYrGMV3hlbrodlMJtvaLcYm7Vivu57EGY29s.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Services\TaxpayerDetailsForm\ActivateQuestionnaireDetails.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    7 of 7
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    87.50% : 
+    7 of 8
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 87.50%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="acceptable">
+    87.50% : 
+    7 of 8
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 87.50%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/Zh1AyKLGBbsg6mnnvy6m7Q8uKVdUMeIY9qJ27C0w.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Services\TaxpayerDetailsForm\MasterListDetails.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    14 of 14
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    85.71% : 
+    12 of 14
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 85.71%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="acceptable">
+    90.91% : 
+    10 of 11
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 90.91%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.18
+  
+  Max:
+  <span class="acceptable">
+    3
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/9Eq1aiqcQUKHK1jJybZGOxrIr7iQb9tFlmhrND1Q.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Services\TaxpayerDetailsForm\PeriodExtensions.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    1 of 1
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    1 of 1
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/4AJ9QJZSk0BQbFo2Ml8iKt18ocwGyr23W4PY6VN0.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Services\TaxpayerDetailsService.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    15 of 15
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    3 of 3
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    3 of 3
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/9cgi0vT0GEGfkehAr7H2AlcvVpNpfqJYgPk0nlVaDU.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Services\TaxpayerSupports\TaxpayerSupportMessageUserUpdator.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    50.00% : 
+    1 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 50.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    50.00% : 
+    1 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 50.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/QXILbYxPb0dr6SGXhcDqzFltBe6eNDLJpEnO7foJz8.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\admin\Services\TaxpayerSupports\TaxpayerSupportUpdator.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    75.00% : 
+    3 of 4
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 75.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    50.00% : 
+    1 of 2
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 50.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.50
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/CshXanT6TA8gzT5esoUv22ML4sgBqzhUw6A7MIIcQ.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\Impersonation\Model\ImpersonationSearchResultItemForm.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    3 of 3
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    62.50% : 
+    10 of 16
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 62.50%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    62.50% : 
+    10 of 16
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 62.50%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/WjMdsIdGmclmw3Jp2aFMWgfF4Sr5y9YIABOSCV2FYg.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\Impersonation\Services\ImpersonationAdminService.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    14 of 14
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    3 of 3
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/Zz6kh6IPqEDt66OBSPY0HMMAqBwkf9tTNrVxJ7iUJY.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\impersonation-ticket\ImpersonationTicketIndex.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    1 of 1
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/ztPZ04K8v6FKLzKbLIIN0YGOJok8rfdWBELZIMuGk.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\integration-api\Exception\IntegrationException.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    1 of 1
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    1 of 1
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/bhHBoRZKBrgAsFTO0TxvE65yrLKZjoexO8VPxZ0KTYE.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\integration-api\Handler\GoAssignmentsReadyHandlerExtensions.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    1 of 1
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    1 of 1
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/UtDxgCxXPxwSIq4eaPQvKNK5M5FxAfRDghQckmzPY.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\integration-api\Handler\RegisterGoProfileReadyHandlerExtensions.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    1 of 1
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    1 of 1
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/ughBirLaLOpX13KDbueVeKUJAWlCMa5zg2aK0GRDmc.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\integration-api\Model\AcomUserRepository.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    15 of 15
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    9 of 9
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    8 of 8
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.13
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/uO97LslsKNYIwPflOgjAZoi6uvHeyjL6vOfcKtLYI.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\integration-api\Model\GoAssignment.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    3 of 3
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    5 of 5
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    5 of 5
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/iwyDTEXF8TnSPtj87sl1G554T8QR8jgghEcnc6n4s.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\integration-api\Model\GoAwareOptionsExtensions.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    7 of 7
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.25
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/mOm6GJ8roiEVHlYvQCuc99H83Ag3CBDkFiky5AvI.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\integration-api\Model\GoContact.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    6 of 6
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    88.89% : 
+    8 of 9
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 88.89%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="acceptable">
+    88.89% : 
+    8 of 9
+  </span>
+  <div class="graph acceptable">
+    <div style="width: 88.89%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/QvWTAQS6dRlsVDLVPdlId3nKdryz5yX9l6Hq9kPMU.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\logdata-model\LogIndex.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    3 of 3
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    8 of 8
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    8 of 8
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/p3Nu8D3uNfMy0JgIPHNgP4RblYe07VRaVqwiMREU4Q.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\notification-admin\AssigneeInvited\AssigneeInvitationMail.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    15 of 15
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    8 of 8
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 2.50
+  
+  Max:
+  <span class="acceptable">
+    3
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/eGaTx41b2X5XWFHZhDOCSBcjqR6ZSSEwdHU5NRx0bgg.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\notification-admin\AssigneeReactivated\AssigneeReactivatedMail.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    11 of 11
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.50
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/PqF9fWA21KMMF57jdAoYVqDdlU75ooiIOoKtUykvyjk.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\notification-admin\AssigneeReactivated\SendEmailAfterReactivated.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    8 of 8
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/QCODrMi8ysqhWL5qOhE5V790WbUxbdWStVbdFua3H74.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\notification-admin\AssigneeReactivated\UpdateProfileDraftAfterReactivation.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    10 of 10
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    3 of 3
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.33
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/58NOypPuMrSNmX3xV91R2vi9JK3nJHPR5eL68UUCaQ.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\notification-admin\NewMessageReceived\NewMessageReceivedMail.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    8 of 8
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/uZ6oPYGa3onjcXpKCvexjDPC2hVtzNSX4VowaLx0.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\profile-integration\_ExtensionPoints\ProfileIntegrationModule.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    3 of 3
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/r2sglrG6gdzaNyhfLIAEFMOQ2hd1pOYwVoT0Z4zcg8.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\profile-integration\AddAssignmentsToAssigneeHandler.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    22 of 22
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    9 of 9
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    7 of 7
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.29
+  
+  Max:
+  <span class="acceptable">
+    3
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/bVUMzo5zcMe2bDQ6ABDtJ7x4pEsE8fgVQduStmN4w.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\profile-integration\BasicInfoPopulator.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    9 of 9
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/98KzEueZEBBcaQVB4QzNf2jirlrDMHCQqNybmlSvH4.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\profile-integration\BusinessInfoPopulator.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    12 of 12
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/NIj8gk3J3i5fMNeBgqrimmMkzLXeYxZ1k9eQs9zB2HM.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\profile-integration\EmailAddressesPopulator.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    5 of 5
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/mcmwcfKG2UErf3x9l3Z3b49apu1S0fG338npzUdbA.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\profile-integration\FamilyMembersPopulator.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    56 of 56
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    25 of 25
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    10 of 10
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 2.10
+  
+  Max:
+  <span class="acceptable">
+    3
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/IJqAvTCAYdlLkDY4IBxgzXNYs3teQsqgzgYNtzi1s.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\profile-integration\FillProfileForAssigneeHandler.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    39 of 39
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    8 of 8
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    7 of 7
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.29
+  
+  Max:
+  <span class="acceptable">
+    2
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/JYu7jfFbNtBP2Ol8khDXYCgBUnAUDBDQMQVOpFacz8w.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\profile-integration\PersonalDetailsPopulator.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    7 of 7
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/BePMHB6mha40ouU6QPH2JAcB8Ut6NOdJMsW1vzFXljw.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\profile-integration\PopulatorBase.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    15 of 15
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    13 of 13
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    4 of 4
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 2.50
+  
+  Max:
+  <span class="acceptable">
+    4
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/4lcMM5ZBd6p6lslJRuVssnSEIwbWxSozubdpqif6WbI.html">c:\Cruise-Agent\pipelines\Trunk-Quality-of-Service\src\profile-integration\ResidenceInfoPopulator.cs</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    12 of 12
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="covered">
+    100.00% : 
+    2 of 2
+  </span>
+  <div class="graph covered">
+    <div style="width: 100.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 1.00
+  
+  Max:
+  <span class="acceptable">
+    1
+  </span>
+</td>
+
+</tr>
+
+<tr>
+  <td class="detail">
+    
+      <a href="files/9DHQADgjmivp9B7Ab19eCaoA34hLVoCRfzcsrzoYI.html">None</a>&nbsp;
+  </td>
+  
+  
+<td class="graph-cell">
+  <span class="nacoverage"><em>N/A</em> : 0 of 0</span>
+  <div class="gray_graph"></div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    74.03% : 
+    57 of 77
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 74.03%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+  <span class="uncovered">
+    76.00% : 
+    57 of 75
+  </span>
+  <div class="graph uncovered">
+    <div style="width: 76.00%" />
+  </div>
+</td>
+
+<td class="graph-cell">
+
+  Avg: 0.00
+  
+  Max:
+  <span class="acceptable">
+    0
+  </span>
+</td>
+
+</tr>
+    
+  </table>
+  
+    </div>
+    <div id="footer">
+	  Generated By  
+      <a href="http://www.ncover.com" target="_top">NCover</a><br />
+    </div>
+  </body>
+</html>

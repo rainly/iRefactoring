@@ -1,0 +1,20 @@
+Features:
+
+- support project configuration
+- support hg log and Ncover report
+- calculate x-axis according to max commits and y-axis according to complexity
+- show multiple project reports in one page with ajax
+- support svn log and sonar report
+
+TODO
+
+* Improve User experience
+
+- load code commits after system startup to improve efficiency
+- make configuration easier
+- show loading information while waiting for calculating data
+- improve user guide
+
+* Future enhancement
+
+- show the trends of commits and complexity
